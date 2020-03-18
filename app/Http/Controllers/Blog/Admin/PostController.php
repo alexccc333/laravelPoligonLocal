@@ -11,20 +11,28 @@ class PostController extends BaseController
 {
     private $blogPostRepository;
 
+    private $blogCategoryRepository;
 
+    /**
+     * PostController constructor.
+     */
     public function __construct()
     {
         parent::__construct();
 
         $this->blogPostRepository = app(BlogPostRepository::class);
+        $this->blogCategoryRepository = app(BlogCategoryRepository::class);
     }
 
+    /**
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
     public function index()
     {
 
         $paginator = $this->blogPostRepository->getAllWithPaginate();
 
-        return view('blog.admin.posts.index',compact('paginator'));
+        return view('blog.admin.posts.index', compact('paginator'));
     }
 
     /**
@@ -50,14 +58,19 @@ class PostController extends BaseController
 
 
     /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @param $id
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function edit($id)
     {
-        dd(__METHOD__);
+        $item = $this->blogPostRepository->getEdit($id);
+        if (empty($item)) {
+            abort(404);
+        }
+
+        $categoryList = $this->blogCategoryRepository->getForComboBox();
+
+        return view('blog.admin.posts.edit', compact('item', 'categoryList'));
     }
 
     /**
@@ -69,7 +82,7 @@ class PostController extends BaseController
      */
     public function update(Request $request, $id)
     {
-        dd(__METHOD__);
+        dd(__METHOD__, $request->all());
     }
 
     /**

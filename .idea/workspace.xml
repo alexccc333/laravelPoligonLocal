@@ -2,18 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2feca37-0709-4044-8650-3e27d907a747" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/poligon.local.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/poligon.local.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/blog/admin/posts/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/blog/admin/posts/includes/post_edit_add_col.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/blog/admin/posts/includes/post_edit_main_col.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/blog/admin/posts/includes/result_messages.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.phpstorm.meta.php" beforeDir="false" afterPath="$PROJECT_DIR$/.phpstorm.meta.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_ide_helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/_ide_helper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/BlogPostFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/BlogPostFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_01_150337_create_blog_categories_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_12_01_150337_create_blog_categories_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_01_150713_create_blog_posts_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_12_01_150713_create_blog_posts_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/BlogCategoriesTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/BlogCategoriesTableSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin/PostController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/BlogPostRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/BlogPostRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/blog/admin/categories/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog/admin/categories/edit.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -243,7 +239,8 @@
       <workItem from="1582447749459" duration="7082000" />
       <workItem from="1584545195462" duration="279000" />
       <workItem from="1584545506485" duration="1587000" />
-      <workItem from="1584547807413" duration="995000" />
+      <workItem from="1584547807413" duration="1854000" />
+      <workItem from="1584558867261" duration="7959000" />
     </task>
     <task id="LOCAL-00001" summary="asaas">
       <created>1575908006903</created>
@@ -266,7 +263,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584545331965</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add prodject data">
+      <created>1584549027446</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1584549027446</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -276,7 +280,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="asaas" />
     <MESSAGE value="add prodject" />
-    <option name="LAST_COMMIT_MESSAGE" value="add prodject" />
+    <MESSAGE value="add prodject data" />
+    <option name="LAST_COMMIT_MESSAGE" value="add prodject data" />
   </component>
   <component name="WindowStateProjectService">
     <state x="312" y="94" width="816" height="730" key="#Intentions" timestamp="1579520968100">
@@ -295,10 +300,10 @@
       <screen x="0" y="0" width="1440" height="870" />
     </state>
     <state x="404" y="90" width="646" height="689" key="#phpunit.xml/0.0.1440.870@0.0.1440.870" timestamp="1580715956845" />
-    <state x="393" y="7" key="CommitChangelistDialog2" timestamp="1584545329636">
+    <state x="393" y="7" key="CommitChangelistDialog2" timestamp="1584549026017">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="393" y="7" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1584545329636" />
+    <state x="393" y="7" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1584549026017" />
     <state x="533" y="180" key="FileChooserDialogImpl" timestamp="1584547093986">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -328,23 +333,28 @@
       <screen x="0" y="0" width="1440" height="870" />
     </state>
     <state x="221" y="78" key="SettingsEditor/0.0.1440.870@0.0.1440.870" timestamp="1580716022290" />
-    <state width="560" height="423" key="SwitcherDM" timestamp="1584546009059">
+    <state width="560" height="423" key="SwitcherDM" timestamp="1584569712382">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="525" height="446" key="SwitcherDM/0.0.1440.870@0.0.1440.870" timestamp="1582451479054" />
-    <state width="560" height="423" key="SwitcherDM/0.0.1536.824@0.0.1536.824" timestamp="1584546009059" />
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1584545506133">
+    <state width="560" height="423" key="SwitcherDM/0.0.1536.824@0.0.1536.824" timestamp="1584569712382" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1584558869051">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1584545506133" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1584558869051" />
     <state x="411" y="167" width="618" height="536" key="find.popup" timestamp="1580715129734">
       <screen x="0" y="0" width="1440" height="870" />
     </state>
     <state x="411" y="167" width="618" height="536" key="find.popup/0.0.1440.870@0.0.1440.870" timestamp="1580715129734" />
-    <state x="383" y="182" width="672" height="678" key="search.everywhere.popup" timestamp="1580906684284">
-      <screen x="0" y="0" width="1440" height="870" />
+    <state x="425" y="187" width="672" height="677" key="run.anything.popup" timestamp="1584567797532">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" width="672" height="677" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1584567797532" />
+    <state x="409" y="172" width="717" height="643" key="search.everywhere.popup" timestamp="1584568108550">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="383" y="182" width="672" height="678" key="search.everywhere.popup/0.0.1440.870@0.0.1440.870" timestamp="1580906684284" />
+    <state x="409" y="172" width="717" height="643" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1584568108550" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

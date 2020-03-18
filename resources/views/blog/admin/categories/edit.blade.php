@@ -7,10 +7,10 @@
     @endphp
     @if($item->exists)
         <form action="{{route('blog.admin.categories.update',$item->id)}}" method="POST">
-            @method('PUT')
+            @method('PATCH')
             @else
-        <form action="{{route('blog.admin.categories.store')}}" method="POST">
-        @endif
+                <form actionw="{{route('blog.admin.categories.store')}}" method="POST">
+                    @endif
                     @csrf
                     <div class="container">
                         @if($errors->any())

@@ -27,8 +27,7 @@ class BlogPostRepository extends CoreRepository {
 
 
         $result = $this->startConditions()->select($columns)->orderBy('id', 'DESC')->with([
-                'category' => function ($query)
-                {
+                'category' => function ($query) {
                     $query->select(['id', 'title']);
                 },
                 'user:id,name'
@@ -36,5 +35,10 @@ class BlogPostRepository extends CoreRepository {
         )->paginate(25);
 
         return $result;
+    }
+
+    public function getEdit($id)
+    {
+        return $this->startConditions()->find($id);
     }
 }
