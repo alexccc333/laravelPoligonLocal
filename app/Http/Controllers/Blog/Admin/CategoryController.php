@@ -25,11 +25,10 @@ class CategoryController extends BaseController {
     /**
      * Display a listing of the resource.
      *
-     * @return Response
+     * @return Factory|View
      */
     public function index()
     {
-        $paginator = BlogCategory::paginate(5);
 
         $paginator = $this->blogCategotyRepository->getAllWithPaginate(5);
 
@@ -58,14 +57,9 @@ class CategoryController extends BaseController {
     public function store(Request $request)
     {
         $data = $request->input();
-        if (empty($data['slug']))
-        {
-            $data['slug'] = str_slug($data['title']);
-        }
 
-        $item = new BlogCategory($data);
-        $item->save();
 
+        $item = (new BlogCategory($data))->create($data);
 
         if ($item)
         {

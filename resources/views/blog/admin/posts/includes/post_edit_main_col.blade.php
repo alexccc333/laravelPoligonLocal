@@ -52,7 +52,7 @@
                         </div>
                         <div class="form-group">
                             <label for="slug">Индификатор</label>
-                            <input type="text" id="slug" value="{{$item->slug}}" class="form-control">
+                            <input type="text" name="slug" id="slug" value="{{$item->slug}}" class="form-control">
                         </div>
 
                         <div class="form-group">
@@ -62,8 +62,8 @@
                         </div>
 
                         <div class="form-check">
-                            <input type="hidden" name="hidden" value="0">
-                            <input type="checkbox" class="form-check-input" value="{{$item->is_published}}"
+                            <input type="hidden" name="is_published" value="0">
+                            <input name="is_published" type="checkbox" class="form-check-input" value="1"
                                    @if ($item->is_published)
                                    checked="checked"
                                 @endif
