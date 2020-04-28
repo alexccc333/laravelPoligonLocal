@@ -27,6 +27,9 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::group(['prefix'=>'digging_deeper'],function (){
+    Route::get('collections','DiggingDeeperController@collections');
+});
 
 $groupData = [
     'namespace' => 'Blog\Admin',
@@ -46,3 +49,6 @@ Route::group($groupData, function ()
         ->except(['show'])
         ->names('blog.admin.posts');
 });
+
+
+Route::get('/home', 'HomeController@index')->name('home');

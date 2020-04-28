@@ -2,7 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2feca37-0709-4044-8650-3e27d907a747" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/DiggingDeeperController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_04_28_201224_create_failed_jobs_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/poligon.local.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/poligon.local.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.phpstorm.meta.php" beforeDir="false" afterPath="$PROJECT_DIR$/.phpstorm.meta.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_ide_helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/_ide_helper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin/CategoryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin/PostController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/BlogCategory.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/BlogCategory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/BlogCategoryRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/BlogCategoryRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/ExampleComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/ExampleComponent.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/verify.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/verify.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/blog/admin/categories/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog/admin/categories/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,6 +162,8 @@
       <path value="$PROJECT_DIR$/vendor/sebastian/comparator" />
       <path value="$PROJECT_DIR$/vendor/sebastian/code-unit-reverse-lookup" />
       <path value="$PROJECT_DIR$/vendor/phpoption/phpoption" />
+      <path value="$PROJECT_DIR$/vendor/laravel/ui" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/type" />
     </include_path>
   </component>
   <component name="ProjectId" id="1WZRlEpatgA59obWZdZ6Fy1GKVf" />
@@ -149,18 +180,18 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="ToolWindowDatabase.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../poligons.local" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\OSPanel\domains\poligon.local\app\Models" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\OSPanel\domains\poligon.local\app\Http\Controllers\Blog\Admin" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\OSPanel\domains\poligon.local\app\Models" />
     </key>
   </component>
   <component name="RunManager" selected="PHPUnit.phpunit.xml">
@@ -244,6 +275,14 @@
       <workItem from="1584954112577" duration="110000" />
       <workItem from="1584954279197" duration="2117000" />
       <workItem from="1584966035268" duration="159000" />
+      <workItem from="1585664064283" duration="744000" />
+      <workItem from="1585668034135" duration="1198000" />
+      <workItem from="1585672768638" duration="3178000" />
+      <workItem from="1587586786004" duration="2356000" />
+      <workItem from="1587636244859" duration="8000" />
+      <workItem from="1587987877930" duration="6292000" />
+      <workItem from="1588062885345" duration="54000" />
+      <workItem from="1588103419774" duration="1801000" />
     </task>
     <task id="LOCAL-00001" summary="asaas">
       <created>1575908006903</created>
@@ -349,11 +388,12 @@
     </state>
     <state x="221" y="78" key="SettingsEditor/0.0.1440.870@0.0.1440.870" timestamp="1580716022290" />
     <state x="236" y="74" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1584726932920" />
-    <state width="560" height="423" key="SwitcherDM" timestamp="1584727714375">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="700" height="540" key="SwitcherDM" timestamp="1587988401580">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="525" height="446" key="SwitcherDM/0.0.1440.870@0.0.1440.870" timestamp="1582451479054" />
     <state width="560" height="423" key="SwitcherDM/0.0.1536.824@0.0.1536.824" timestamp="1584727714375" />
+    <state width="700" height="540" key="SwitcherDM/0.0.1920.1050@0.0.1920.1050" timestamp="1587988401580" />
     <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1584954278571">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -370,11 +410,12 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" width="672" height="677" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1584567797532" />
-    <state x="409" y="172" width="717" height="643" key="search.everywhere.popup" timestamp="1584954348968">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="511" y="219" width="897" height="820" key="search.everywhere.popup" timestamp="1585677060080">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="383" y="182" width="672" height="678" key="search.everywhere.popup/0.0.1440.870@0.0.1440.870" timestamp="1580906684284" />
     <state x="409" y="172" width="717" height="643" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1584954348968" />
+    <state x="511" y="219" width="897" height="820" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1585677060080" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
