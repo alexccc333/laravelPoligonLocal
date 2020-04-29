@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Jobs\GenerateCatalog\GenerateCatalogMainJob;
 use App\Models\BlogPost;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
@@ -89,5 +90,9 @@ class DiggingDeeperController extends Controller
 
 
         dd($sortedSimpleCollection,$sortedAscCollection,$sortedDescCollection);
+    }
+
+    public function prepareCatalog(){
+        GenerateCatalogMainJob::dispatch();
     }
 }

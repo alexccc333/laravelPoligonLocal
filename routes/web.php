@@ -29,6 +29,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::group(['prefix'=>'digging_deeper'],function (){
     Route::get('collections','DiggingDeeperController@collections');
+
+    Route::get('prepare-catalog','DiggingDeeperController@prepareCatalog');
 });
 
 $groupData = [

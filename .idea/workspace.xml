@@ -2,36 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2feca37-0709-4044-8650-3e27d907a747" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/DiggingDeeperController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_04_28_201224_create_failed_jobs_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/poligon.local.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/poligon.local.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Jobs/BlogPostAfterCreateJob.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Jobs/BlogPostAfterDeleteJob.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Jobs/BlogProcessVideoJob.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Jobs/GenerateCatalog/AbstractJob.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Jobs/GenerateCatalog/ArchiveUploadsJob.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Jobs/GenerateCatalog/GenerateCatalogCacheJob.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Jobs/GenerateCatalog/GenerateCatalogMainJob.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Jobs/GenerateCatalog/GenerateCategoriesJob.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Jobs/GenerateCatalog/GenerateDeliverTestJob.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Jobs/GenerateCatalog/GenerateGoodsFileJob.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Jobs/GenerateCatalog/GeneratePointsJob.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Jobs/GenerateCatalog/GeneratePricesFileChunkJob.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Jobs/GenerateCatalog/SendProceRequestJob.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_04_28_202719_create_jobs_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.phpstorm.meta.php" beforeDir="false" afterPath="$PROJECT_DIR$/.phpstorm.meta.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_ide_helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/_ide_helper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin/CategoryController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin/PostController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/BlogCategory.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/BlogCategory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/BlogCategoryRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/BlogCategoryRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/ExampleComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/ExampleComponent.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/_variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/verify.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/verify.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/blog/admin/categories/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog/admin/categories/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/DiggingDeeperController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/DiggingDeeperController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,9 +29,7 @@
   </component>
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
-    <execution>
-      <executable />
-    </execution>
+    <execution />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -172,7 +159,6 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -184,7 +170,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -214,18 +200,6 @@
         <item itemvalue="npm.prod" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -282,7 +256,10 @@
       <workItem from="1587636244859" duration="8000" />
       <workItem from="1587987877930" duration="6292000" />
       <workItem from="1588062885345" duration="54000" />
-      <workItem from="1588103419774" duration="1801000" />
+      <workItem from="1588103419774" duration="3802000" />
+      <workItem from="1588135560838" duration="14000" />
+      <workItem from="1588187171606" duration="5085000" />
+      <workItem from="1588197356718" duration="170000" />
     </task>
     <task id="LOCAL-00001" summary="asaas">
       <created>1575908006903</created>
@@ -319,11 +296,18 @@
       <option name="project" value="LOCAL" />
       <updated>1584966069120</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Обновил до 6">
+      <created>1588105369068</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1588105369068</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -331,21 +315,14 @@
     <MESSAGE value="add prodject" />
     <MESSAGE value="add prodject data" />
     <MESSAGE value="add update data" />
-    <option name="LAST_COMMIT_MESSAGE" value="add update data" />
+    <MESSAGE value="Обновил до 6" />
+    <option name="LAST_COMMIT_MESSAGE" value="Обновил до 6" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="312" y="94" width="816" height="730" key="#Intentions" timestamp="1579520968100">
-      <screen x="0" y="0" width="1440" height="870" />
-    </state>
-    <state x="312" y="94" width="816" height="730" key="#Intentions/0.0.1440.870@0.0.1440.870" timestamp="1579520968100" />
     <state x="434" y="26" key="#PHP" timestamp="1580715955734">
       <screen x="0" y="0" width="1440" height="870" />
     </state>
     <state x="434" y="26" key="#PHP/0.0.1440.870@0.0.1440.870" timestamp="1580715955734" />
-    <state x="429" y="238" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1579521846712">
-      <screen x="0" y="0" width="1440" height="870" />
-    </state>
-    <state x="429" y="238" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.870@0.0.1440.870" timestamp="1579521846712" />
     <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1584776246512">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -354,10 +331,11 @@
       <screen x="0" y="0" width="1440" height="870" />
     </state>
     <state x="404" y="90" width="646" height="689" key="#phpunit.xml/0.0.1440.870@0.0.1440.870" timestamp="1580715956845" />
-    <state x="393" y="7" key="CommitChangelistDialog2" timestamp="1584966066663">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="491" y="9" key="CommitChangelistDialog2" timestamp="1588105367540">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="393" y="7" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1584966066663" />
+    <state x="491" y="9" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1588105367540" />
     <state x="533" y="180" key="FileChooserDialogImpl" timestamp="1584547093986">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -383,17 +361,18 @@
       <screen x="0" y="0" width="1440" height="870" />
     </state>
     <state x="485" y="250" key="NewPhpClassDialog/0.0.1440.870@0.0.1440.870" timestamp="1581879183682" />
-    <state x="236" y="74" key="SettingsEditor" timestamp="1584726932920">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="295" y="94" key="SettingsEditor" timestamp="1588187538574">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="221" y="78" key="SettingsEditor/0.0.1440.870@0.0.1440.870" timestamp="1580716022290" />
     <state x="236" y="74" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1584726932920" />
-    <state width="700" height="540" key="SwitcherDM" timestamp="1587988401580">
+    <state x="295" y="94" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1588187538574" />
+    <state width="700" height="540" key="SwitcherDM" timestamp="1588196407544">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="525" height="446" key="SwitcherDM/0.0.1440.870@0.0.1440.870" timestamp="1582451479054" />
     <state width="560" height="423" key="SwitcherDM/0.0.1536.824@0.0.1536.824" timestamp="1584727714375" />
-    <state width="700" height="540" key="SwitcherDM/0.0.1920.1050@0.0.1920.1050" timestamp="1587988401580" />
+    <state width="700" height="540" key="SwitcherDM/0.0.1920.1050@0.0.1920.1050" timestamp="1588196407544" />
     <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1584954278571">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -406,10 +385,11 @@
       <screen x="0" y="0" width="1440" height="870" />
     </state>
     <state x="411" y="167" width="618" height="536" key="find.popup/0.0.1440.870@0.0.1440.870" timestamp="1580715129734" />
-    <state x="425" y="187" width="672" height="677" key="run.anything.popup" timestamp="1584567797532">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="531" y="238" width="840" height="863" key="run.anything.popup" timestamp="1588187767574">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="425" y="187" width="672" height="677" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1584567797532" />
+    <state x="531" y="238" width="840" height="863" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1588187767574" />
     <state x="511" y="219" width="897" height="820" key="search.everywhere.popup" timestamp="1585677060080">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
